@@ -5,12 +5,12 @@
 // Input :  arr[] = {4, 5, 1, 2}
 // Output : arr[] = {2, 1, 5, 4}
 
-function fun(num){
-  
-   for(let i=num; i>0; i--){
-      let bag=i+" "
+function fun(arr){
+  let bag="";
+   for(let i=arr.length-1; i>=0; i--){
+       bag=arr[i]+" "
       console.log(bag)
    }
   
 }
-fun(3)
+fun([4,5,1,2])
